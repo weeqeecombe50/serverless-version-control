@@ -1,0 +1,13 @@
+service: serverless-version-control
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  createRepo:
+    handler: index.createRepo
+    events:
+      - http:
+          path: repositories
+          method: post
