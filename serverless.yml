@@ -2,7 +2,7 @@ service: serverless-version-control
 
 provider:
   name: aws
-  runtime: nodejs18.x
+  runtime: nodejs20.x
 
 functions:
   createRepo:
