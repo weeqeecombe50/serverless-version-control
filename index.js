@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
-// Beispiel-API-Endpoint für Repository-Erstellung
+// API-Endpoint zum Erstellen eines Repositories
 app.post('/repositories', (req, res) => {
     const { name } = req.body;
     // Logik zur Erstellung eines Repositories
